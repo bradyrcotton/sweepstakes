@@ -1,4 +1,14 @@
 from contestant import Contestant
 
-cont_1 = Contestant("Brady", "Cotton", "brady@gmail.com", 1)
-print(cont_1["first_name"])
+
+
+
+def contestant_info ():
+    first_name = input("Enter First Name")
+    last_name = input("Enter Last Name")
+    email = input("Enter Email")
+    reg_number = input("Enter Registration Number")
+    contestant = Contestant(first_name, last_name, email, reg_number)
+    # print(contestant["first_name"])
+    return contestant
+
