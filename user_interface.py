@@ -1,14 +1,23 @@
-from contestant import Contestant
+
+
+def get_string_input(inputs):
+    u_input = input(inputs)
+    return u_input
+    # return input from user as a string
 
 
 
-
-def contestant_info ():
+def contestant_info():
     first_name = input("Enter First Name")
     last_name = input("Enter Last Name")
     email = input("Enter Email")
-    reg_number = input("Enter Registration Number")
-    contestant = Contestant(first_name, last_name, email, reg_number)
-    # print(contestant["first_name"])
+    contestant = (first_name, last_name, email, reg_number)
     return contestant
 
+
+# def update_dict():
+#     contestants = contestant_info()
+#     Sweepstake().contestants.update(contestants)
+
+
+# update_dict()
