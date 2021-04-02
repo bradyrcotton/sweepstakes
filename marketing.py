@@ -7,4 +7,4 @@ class MarketingFirm:
 
     def create_sweepstakes(self):
         sweep = self.manager.choose_manager()
-        return sweep 
+        return sweep

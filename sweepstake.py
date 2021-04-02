@@ -21,11 +21,15 @@ class Sweepstake:
         winner = user_interface.get_random_number(0, len(self.contestants))
         return winner
 
-    def print_contestant_info(self, contestant):
-        contestant = (contestant[self.pick_winner()])
-        self.name = self.contestants[contestant["first_name"]]
+    def print_contestant_info(self):
+        contestant_num = self.pick_winner()
+        contestant_info = self.contestants[contestant_num]
+        self.name = contestant_info["first_name"]
+        print(self.name)
 
 
-Sweepstake().register_contestant()
-Sweepstake().register_contestant()
-Sweepstake().print_contestant_info(Sweepstake().contestants)
+sweepstake = Sweepstake()
+sweepstake.register_contestant()
+sweepstake.register_contestant()
+sweepstake.register_contestant()
+sweepstake.print_contestant_info()
