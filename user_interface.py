@@ -1,4 +1,4 @@
-
+import random
 
 def get_string_input(inputs):
     u_input = input(inputs)
@@ -14,7 +14,13 @@ def contestant_info():
     contestant = (first_name, last_name, email, reg_number)
     return contestant
 
+def random_number(min_value, max_value):
+    return random.randint(min_value, max_value)
 
+
+def get_random_number(num_1, num_2):
+    random_int = random_number(num_1, num_2)
+    return random_int
 # def update_dict():
 #     contestants = contestant_info()
 #     Sweepstake().contestants.update(contestants)

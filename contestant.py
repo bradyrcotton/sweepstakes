@@ -8,8 +8,8 @@ class Contestant:
         self.email = email
         self.reg_number = reg_number
 
-    # def __getitem__(self, key):
-    #     return getattr(self, key)
+    def __getitem__(self, key):
+        return getattr(self, key)
 
 # {first_name: "", last_name: "", email: "", reg_number: ""}
 #  first_name, last_name, email, reg_number
