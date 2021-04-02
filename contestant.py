@@ -11,5 +11,3 @@ class Contestant:
     def __getitem__(self, key):
         return getattr(self, key)
 
-# {first_name: "", last_name: "", email: "", reg_number: ""}
-#  first_name, last_name, email, reg_number
