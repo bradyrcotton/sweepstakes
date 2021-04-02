@@ -2,7 +2,6 @@ import user_interface
 from contestant import Contestant
 
 
-
 class Sweepstake:
 
     def __init__(self):
@@ -21,14 +20,15 @@ class Sweepstake:
         contestant = Contestant(first_name, last_name, email, reg_number)
         self.contestants[reg_number] = contestant
 
-
-
-
     def pick_winner(self):
         winner = user_interface.get_random_number(0, len(self.contestants))
         print(winner)
         return winner
-    # print_contestant_info(self, contestant)
+
+    def print_contestant_info(self, contestant):
+        print(contestant[self.pick_winner()])
+
+
 Sweepstake().register_contestant()
 Sweepstake().register_contestant()
 Sweepstake().register_contestant()
